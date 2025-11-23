@@ -16,7 +16,37 @@ public class Arrayss {
      for (int i=0;i<a.length;i++){
          System.out.println("Index["+i+"]"+"="+a[i]);
      }
+
+
  }
 
+
+ public  void Reverse_traversal(int []a) {
+
+     for (int i = a.length - 1; i >= 0; i--) {
+         System.out.println("Index[" + i + "]" + "=" + a[i]);
+     }
+ }
+
+ public void Traversal2(int a[]){
+     for(int e:a)
+         System.out.println(e);
+
+ }
+
+ public void update(int[]a,int index, int nvalue){
+     if(index<0 || index>=a.length)
+         System.out.println("Index not found");
+     else
+     a[index]=nvalue;
+
+ }
+    public void delete(int[]a,int index){
+        if(index<0 || index>=a.length)
+            System.out.println("Index not found");
+        else
+            a[index]=0;
+
+    }
 
 }
