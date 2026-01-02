@@ -73,9 +73,15 @@ public E removeLast(){
     return delete;
 
 }
+public void display(){
+    Node<E>temp=tail.getNext();
+    do {
+        System.out.print(temp.getData()+"--->");
+        temp=temp.getNext();
+    }while (temp!=tail.getNext());
 
-
-
+    System.out.println("go first ("+temp.getData()+")");
+}
 
 
 class Node<E>{
