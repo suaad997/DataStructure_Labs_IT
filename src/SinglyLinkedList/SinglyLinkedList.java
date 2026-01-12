@@ -42,6 +42,17 @@ while (temp!=null){
 
 
 }
+    public void display2(){
+        Node<E> temp=head;
+        while (temp!=null){
+            System.out.print(temp.getData());
+            temp=temp.getNext();
+        }
+
+
+
+    }
+
 public void addLast(E data){
     Node<E> newNode=new Node(data,null);
     if(isEmpty()){

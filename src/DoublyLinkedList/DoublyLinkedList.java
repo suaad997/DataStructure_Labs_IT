@@ -68,6 +68,17 @@ public void display(){
     }
     System.out.println("tail--->null");
 }
+    public void display2(){
+        if (isEmpty()){
+            System.out.println("List is empty");
+            return;
+        }
+        Node<E>temp=head.getNext();
+        while (temp!=tail){
+            System.out.println(temp.getData()+" ");
+            temp=temp.getNext();
+        }
+    }
 
 
 
