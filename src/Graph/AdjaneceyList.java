@@ -19,7 +19,7 @@ public class AdjaneceyList {
 
     public void addedges(int from, int to){ // 0  1
         adjlist[from].addLast(to);
-        adjlist[to].addLast(from);
+        adjlist[to].addLast(from);  // deleting this line will turn  the  undirect graph into  direct graph
         edges++;
     }
 
